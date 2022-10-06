@@ -8,26 +8,46 @@
 </head>
 <body>
     <form action="ejemplo.php" method="get">
-        <p>Nombre: <input type="text" name="nombre" 
-       size="40"></p>
-       <p>Apellidos: <input type="text" name="nombre" 
-        size="40" placeholder="Escriba sus apellidos"></p>
-        <p>Fecha de nacimiento: <input type="date" name="nacido"></p>
+        <fieldset>
+            <legend>Datos personales</legend>
+        <label>Nombre: <input type="text" name="nombre" 
+       size="40"></label>
+       <label>Apellidos: <input type="text" name="nombre" 
+        size="40" placeholder="Escriba sus apellidos"></label>
+        <p><label>Fecha de nacimiento: <input type="date" name="nacido"></label></p>
         <p>Sexo:
             <input type="radio" name="hm" value="h"> Hombre
             <input type="radio" name="hm" value="m"> Mujer
         </p>
-        <p>Usuario: <input type="text" name="usuario" 
-            maxlength="15"></p>
-        <p>Contraseña: <input type="password" name="password" 
-            minlength="8"></p>
-            <p>Estado civil</p>
-            <select name="menu">
-                <option value="soltero"selected>Soltero/a</option>
+        <label>Usuario: <input type="text" name="usuario" 
+            maxlength="15"></label>
+        <label>Contraseña: <input type="password" name="password" 
+            minlength="8"></label>
+            <p><label for="estadoCivil">Estado civil
+            <select name="menu" id="estadoCivil">
+                <option value="soltero" selected>Soltero/a</option>
                 <option value="casado">Casado/a</option>
-            </select>
+            </select></label></p>
+            <label for="nhijos">Hijos
+                <select name="menu" id="nhijos">
+                    <option value="">...</option>
+                    <option value="cero">0</option>
+                    <option value="uno">1</option>
+                    <option value="dos">2</option>
+                </select>
+            </label>
+        </fieldset>
+        <button type="button">
+            <img src="tick.png" alt="imagen" width="32" height="32" style="vertical-align: middle">
+            Este boton no hace nada
+        </button>
             <p>
             <textarea name="texto" cols="30" rows="10" placeholder="Escriba algo"></textarea></p>
+            <p>
+                <input type="radio" name="mpl" value="m">Macarrones
+                <input type="radio" name="mpl" value="p">Pizza
+                <input type="radio" name="mpl" value="l">Lentejas
+            </p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Reiniciar">
     </form>
