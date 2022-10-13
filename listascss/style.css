@@ -2,7 +2,9 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
 }
-
 dt{
+    color: rgb(65, 119, 119);
+}
+dt.textoverde{
     color: green;
 }
