@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+body {
+    background-color: aquamarine;
+}
+h2 {
+    background-color: blue;
+}
+h3 {
+    background-color: lightblue;
+    color: white;
+}
+pre {
+    background-color: white;
+    font-weight: bold;
+}
+address {
+    text-align: right;
+}
